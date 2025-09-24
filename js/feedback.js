@@ -1,16 +1,18 @@
 // feedback.js
-const form = document.querySelector('form');
+const form = document.querySelector("form");
 
-form.onsubmit = function (event) {
+form.addEventListener("submit", function (event) {
   if (!form.checkValidity()) {
-    event.preventDefault(); // impede o envio só quando inválido
+    event.preventDefault(); // cancela envio só se inválido
+    event.stopPropagation();
     alert("⚠️ Por favor, preencha todos os campos obrigatórios antes de enviar.");
   } else {
-    // aqui você NÃO usa preventDefault()
-    // deixa o formsubmit.co enviar normalmente
+    // NÃO usar preventDefault aqui
+    // deixa o FormSubmit enviar e redirecionar para agradecimento.html
     alert("✅ Obrigado pela sua avaliação!");
   }
 
-  form.classList.add("was-validated"); // efeito do bootstrap
-};
+  form.classList.add("was-validated"); // efeito do Bootstrap
+});
+
 
