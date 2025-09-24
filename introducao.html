@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introdução</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Guia De<br>Informática Básica</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="topicosDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="true">
+              Tópicos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="topicosDropdown">
+              <li><a class="dropdown-item" href="introducao.html">Introdução</a></li>
+              <li><a class="dropdown-item" href="hardwaresoftware.html">Hardware e Software</a></li>
+              <li><a class="dropdown-item" href="sistemasoperacionais.html">Sistemas Operacionais</a></li>
+              <li><a class="dropdown-item" href="navegacao.html">Navegação na Internet</a></li>
+              <li><a class="dropdown-item" href="seguranca.html">Segurança</a></li>
+            </ul>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container  my-5">
+    <h1 class="text-center my-5">Introdução</h1>
+    <img src="/images/pc.jpg" class="d-block mx-auto img-fluid mb-5 rounded w-75" alt="Computador">
+    <p class="text-start my-5">
+      A computação tem sua origem há milhares de anos, com instrumentos de cálculo primitivos, como o ábaco, utilizado
+      para somar e subtrair. Ao longo dos séculos, surgiram avanços significativos: no século XVII, Blaise Pascal criou
+      a primeira calculadora mecânica; no século XIX, Charles Babbage projetou a Máquina Analítica, considerada o
+      primeiro conceito de computador programável, e George Boole desenvolveu a Álgebra Booleana, essencial para a
+      lógica dos computadores e circuitos digitais. No século XX, Alan Turing, conhecido hoje como pai da Ciência da
+      Computação, formalizou o conceito de máquina universal, estabelecendo os princípios teóricos da computação
+      moderna. Com o surgimento de computadores eletrônicos, como o ENIAC, a tecnologia se tornou mais rápida, confiável
+      e acessível, transformando profundamente a forma como trabalhamos, estudamos e nos comunicamos.
+      <img src="/images/historia.png" class=" d-block mx-auto img-fluid my-5 img-fluid" alt="">
+      Com o avanço da era digital, o conhecimento sobre computadores tornou-se indispensável em praticamente todas as
+      áreas da vida — no trabalho, nos estudos ou até mesmo para lazer. Desde a comunicação até o armazenamento de dados
+      e o acesso à informação, os computadores desempenham um papel central. Essas ferramentas, cada vez mais integradas
+      ao cotidiano, são essenciais para realizarmos tarefas de forma mais rápida, eficiente e conectada.
+    </p>
+    <h2 class="text-start mb-4">O que é um computador? </h2>
+
+    <p class="text-start mb-4">Um computador é uma máquina eletrônica capaz de receber, processar e armazenar dados. Ele
+      realiza essas funções através de um conjunto de componentes físicos, chamados de <strong>Hardware</strong>, e
+      programas, conhecidos como <strong>software</strong>.
+
+    <ul class="text-start">
+      <li class="mb-4"><strong>Hardware:</strong> Refere-se à parte física do computador, ou seja, as peças que o
+        compõem, como o processador (CPU), a memória, os dispositivos de armazenamento (HDs, SSDs), e dispositivos de
+        entrada/saída como teclado, monitor e mouse.</li>
+
+      <li class="mb-4"><strong>Software:</strong> Conjunto de programas e sistemas que controlam o hardware e
+        possibilitam a execução de tarefas. Exemplos incluem sistemas operacionais (como Windows e Linux), navegadores
+        de internet, editores de texto, jogos e outros aplicativos.</li>
+    </ul>
+    </p>
+    <br>
+    <h2 class="text-start mb-4">Como funciona um computador:</h2>
+
+    <ol class="text-start">
+      <li class="mb-4"><strong>Entrada de dados:</strong> O usuário fornece dados e comandos ao computador através de
+        dispositivos de entrada, como teclado, mouse ou microfone. </li>
+
+      <li class="mb-4"><strong>Processamento:</strong> A CPU processa esses dados, realizando cálculos e lógicas de
+        acordo com as instruções do software.</li>
+
+      <li class="mb-4"><strong>Saída:</strong> O computador exibe ou reproduz o resultado do processamento através de
+        dispositivos de saída, como o monitor, altifalantes ou impressora.</li>
+
+      <li class="mb-4"><strong>Armazenamento:</strong> Os dados processados podem ser guardados para uso futuro em HDs e
+        SSDs </li>
+    </ol>
+    <br>
+    <h2 class="text-start mb-4">Tipos de computadores:</h2>
+    <br>
+    <ul class="text-start">
+      <li class="mb-4"><strong>Desktops (Computadores de Mesa):</strong> Computadores fixos, geralmente mais potentes e
+        expansíveis que notebooks. São ideais para tarefas que exigem maior desempenho, como jogos, edição de vídeos,
+        programação e trabalhos de escritório. Por serem maiores e dependerem de conexão constante à energia elétrica,
+        não são facilmente transportáveis.
+        <img src="/images/desktop.png" class="tipos-computadores d-block mx-auto my-5 img-fluid" alt="">
+      </li>
+
+
+
+      <li class="mb-4"><strong>Notebooks (Laptops):</strong> São compactos e fáceis de transportar, integrando teclado,
+        tela e outros componentes em uma única peça, permitindo trabalhar ou estudar em qualquer lugar.<img
+          src="/images/laptop.png" class="tipos-computadores d-block mx-auto my-5 img-fluid" alt=""></li>
+
+
+
+      <li class="mb-4"><strong>Smartphones:</strong> Telefones inteligentes que combinam funções de comunicação,
+        navegação na internet, fotos, vídeos e aplicativos. Além disso, são mais acessíveis e fáceis de usar.<img
+          src="/images/smartphone.png" class="tipos-computadores d-block mx-auto my-5 img-fluid" alt=""></li>
+
+
+
+      <li class="mb-4"><strong>Tablets:</strong> Dispositivos móveis com tela sensível ao toque, representando uma opção
+        intermediária entre smartphones e notebooks.<img src="/images/tablet.png"
+          class="tipos-computadores d-block mx-auto my-5 img-fluid" alt=""></li>
+
+
+
+      <li class="mb-4"><strong>Servidores:</strong> Computadores potentes responsáveis por armazenar e distribuir dados
+        para outros computadores, essenciais para a internet.
+        <img src="/images/servidor.png" class="tipos-computadores d-block mx-auto my-5 img-fluid" alt="">
+      </li>
+
+
+
+      <li class="mb-4"><strong>Sistemas embarcados:</strong> Computadores dedicados a tarefas específicas dentro de
+        outros dispositivos, como automóveis, eletrodomésticos e equipamentos médicos.
+        <img src="/images/sistemaembarcados.png" class="tipos-computadores d-block mx-auto my-5 img-fluid" alt="">
+      </li>
+
+
+
+    </ul>
+
+    <p class="text-center"><strong>Esse guia terá como foco computadores desktop e laptops.</strong></p>
+
+
+    <section id="questoes" class="my-5">
+      <div class="card p-4 shadow-sm">
+        <h2 class="text-center mb-4">Questões</h2>
+        <div id="quiz-container"></div>
+        <button id="verificar" class="btn btn-primary mt-3">Verificar Respostas</button>
+      </div>
+    </section>
+
+
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>© 2025 Guia de Informática Básica</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/introducao.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bem-vindo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html">Guia De<br>Informática Básica</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="topicosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="true">
+              Tópicos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="topicosDropdown">
+              <li><a class="dropdown-item" href="introducao.html">Introdução</a></li>
+              <li><a class="dropdown-item" href="hardwaresoftware.html">Hardware e Software</a></li>
+              <li><a class="dropdown-item" href="sistemasoperacionais.html">Sistemas Operacionais</a></li>
+              <li><a class="dropdown-item" href="navegacao.html">Navegação na Internet</a></li>
+              <li><a class="dropdown-item" href="seguranca.html">Segurança</a></li>
+            </ul>
+
+          </li>
+          <li class="nav-item"><a class="nav-link" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container text-center my-5">
+    <h1 class="my-5">Bem-vindo</h1>
+
+    <p class="text-start">
+      Este site foi criado com o objetivo de ajudar iniciantes a entender conceitos básicos de computação. Aqui você encontrará explicações simples sobre hardware, software, sistemas operacionais, navegação na internet e segurança. 
+    </p>
+
+    <!-- Módulos -->
+    <h1 class="my-5">Tópicos</h1>
+    <div class="row g-3">
+      <div class="col-12 col-md-6">
+        <a href="introducao.html" class="btn btn-secondary w-100 py-3" onclick="marcarComoLido(this)">Introdução</a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a href="hardwaresoftware.html" class="btn btn-secondary w-100 py-3" onclick="marcarComoLido(this)">Hardware e Software</a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a href="sistemasoperacionais.html" class="btn btn-secondary w-100 py-3" onclick="marcarComoLido(this)">Sistema Operacional</a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a href="navegacao.html" class="btn btn-secondary w-100 py-3" onclick="marcarComoLido(this)">Navegação na Internet</a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a href="seguranca.html" class="btn btn-secondary w-100 py-3" onclick="marcarComoLido(this)">Segurança</a>
+      </div>
+      <div class="col-12 col-md-6">
+        <a href="feedback.html" class="btn btn-secondary w-100 py-3" onclick="marcarComoLido(this)">Feedback</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3">
+    <small>© 2025 Guia de Informática Básica</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+
+
+
+

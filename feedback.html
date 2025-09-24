@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Avaliação - Guia de Informática Básica</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-dark bg-dark navbar-expand-lg sticky-top">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="index.html">Guia de<br>Informática Básica</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="menu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="index.html">Início</a></li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="topicosDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+              Tópicos
+            </a>
+            <ul class="dropdown-menu dropdown-menu-dark dropdown-menu-end" aria-labelledby="topicosDropdown">
+              <li><a class="dropdown-item" href="introducao.html">Introdução</a></li>
+              <li><a class="dropdown-item" href="hardwaresoftware.html">Hardware e Software</a></li>
+              <li><a class="dropdown-item" href="sistemasoperacionais.html">Sistemas Operacionais</a></li>
+              <li><a class="dropdown-item" href="navegacao.html">Navegação na Internet</a></li>
+              <li><a class="dropdown-item" href="seguranca.html">Segurança</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"><a class="nav-link active" href="feedback.html">Feedback</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Conteúdo principal -->
+  <main class="container my-5">
+    <section class="card shadow-lg p-4">
+      <h2 class="text-center mb-4">📋 Avaliação do Site</h2>
+
+      <form id="feedbackForm" action="https://formsubmit.co/romulo_doa@hotmail.com" method="POST" class="needs-validation" novalidate>
+        
+        <!-- Dados pessoais -->
+        <div class="mb-3">
+          <label for="nome" class="form-label">Nome:</label>
+          <input type="text" id="nome" name="nome" class="form-control" required placeholder="Digite seu nome">
+        </div>
+
+        <div class="mb-3">
+          <label for="email" class="form-label">Email:</label>
+          <input type="email" id="email" name="email" class="form-control" required placeholder="Digite seu email">
+        </div>
+
+        <div class="mb-3">
+          <label for="sexo" class="form-label">Sexo:</label>
+          <select id="sexo" name="sexo" class="form-select" required>
+            <option value="">Selecione</option>
+            <option value="masculino">Masculino</option>
+            <option value="feminino">Feminino</option>
+            <option value="outro">Outro</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="idade" class="form-label">Idade:</label>
+          <input type="number" id="idade" name="idade" class="form-control" min="1" max="120" required placeholder="Sua idade">
+        </div>
+
+        <hr>
+
+        <!-- Perguntas -->
+        <div class="mb-3">
+          <label for="pergunta1" class="form-label">1. Como você avalia a experiência de navegação no site?</label>
+          <select id="pergunta1" name="pergunta1" class="form-select" required>
+            <option value="">Selecione</option>
+            <option value="1">1 - Muito Ruim</option>
+            <option value="2">2 - Ruim</option>
+            <option value="3">3 - Regular</option>
+            <option value="4">4 - Bom</option>
+            <option value="5">5 - Excelente</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="pergunta2" class="form-label">2. O design do site é atraente?</label>
+          <select id="pergunta2" name="pergunta2" class="form-select" required>
+            <option value="">Selecione</option>
+            <option value="1">1 - Muito Ruim</option>
+            <option value="2">2 - Ruim</option>
+            <option value="3">3 - Regular</option>
+            <option value="4">4 - Bom</option>
+            <option value="5">5 - Excelente</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="pergunta3" class="form-label">3. A velocidade de carregamento do site é satisfatória?</label>
+          <select id="pergunta3" name="pergunta3" class="form-select" required>
+            <option value="">Selecione</option>
+            <option value="1">1 - Muito Lenta</option>
+            <option value="2">2 - Lenta</option>
+            <option value="3">3 - Regular</option>
+            <option value="4">4 - Rápida</option>
+            <option value="5">5 - Muito Rápida</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="pergunta4" class="form-label">4. O conteúdo do guia é claro e compreensível?</label>
+          <select id="pergunta4" name="pergunta4" class="form-select" required>
+            <option value="">Selecione</option>
+            <option value="1">1 - Totalmente claro</option>
+            <option value="2">2 - Claro na maior parte</option>
+            <option value="3">3 - Moderadamente claro</option>
+            <option value="4">4 - Pouco claro</option>
+            <option value="5">5 - Nada claro</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="pergunta5" class="form-label">5. Você recomendaria este site para outras pessoas?</label>
+          <select id="pergunta5" name="pergunta5" class="form-select" required>
+            <option value="">Selecione</option>
+            <option value="1">1 - De jeito nenhum</option>
+            <option value="2">2 - Provavelmente não</option>
+            <option value="3">3 - Talvez</option>
+            <option value="4">4 - Provavelmente sim</option>
+            <option value="5">5 - Com certeza</option>
+          </select>
+        </div>
+
+        <div class="mb-3">
+          <label for="comentarios" class="form-label">Outros comentários:</label>
+          <textarea id="comentarios" name="comentarios" rows="4" class="form-control" placeholder="Deixe seu comentário aqui..."></textarea>
+        </div>
+
+        <!-- Hidden para redirecionamento -->
+        <input type="hidden" name="_next" value="http://127.0.0.1:5500/agradecimento.html">
+        <input type="hidden" name="_subject" value="Avaliação do Site">
+        <input type="hidden" name="_captcha" value="false">
+
+        <div class="text-center">
+          <button type="submit" class="btn btn-success px-4">Enviar Avaliação</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer class="bg-dark text-white text-center py-3 mt-5">
+    <small>© 2025 Guia de Informática Básica</small>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/feedback.js"></script>
+</body>
+</html>
+
