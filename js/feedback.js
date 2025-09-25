@@ -10,20 +10,5 @@ document.querySelector('form').onsubmit = function() {
     return;
   }
 
-  // envio pelo EmailJS ou outro serviço
-  emailjs.sendForm("SEU_SERVICE_ID", "SEU_TEMPLATE_ID", form)
-    .then(() => {
-      // grava no localStorage que feedback foi concluído
-      localStorage.setItem("feedback.html", "concluido");
-      window.location.href = "agradecimento.html";
-    })
-    .catch((error) => {
-      console.error("Erro:", error);
-      alert("❌ Ocorreu um erro ao enviar. Tente novamente.");
-    });
 
-  form.classList.add("was-validated");
-});
-
-
-
+})
