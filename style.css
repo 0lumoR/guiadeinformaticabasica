@@ -56,14 +56,17 @@ li{
 }
 
 @media (max-width: 250px) {
-  h1, h2 {
-    font-size: 1.2rem; /* diminui títulos */
-    text-align: center;
-  }
+  
 
   p, li, td, th {
     font-size: 0.85rem; /* diminui fonte do texto */
   }
-
+h1,h2 {
+  font-size: clamp(1.4rem, 6vw, 2.5rem); /* se adapta ao tamanho da tela */
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  text-align: center; /* garante alinhamento uniforme */
+  line-height: 1.2; /* diminui espaço vertical e ajuda a caber */
+}
   
 }
