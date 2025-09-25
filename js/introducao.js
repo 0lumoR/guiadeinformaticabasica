@@ -1,5 +1,3 @@
-// introducao.js
-
 const questoesIntroducao = [
   {
     enunciado: "1) Sobre hardware e software, marque as afirmativas corretas:",

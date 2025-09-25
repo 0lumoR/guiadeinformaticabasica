@@ -1,5 +1,3 @@
-// sistemasOperacionais.js
-
 const questoesSistemasOperacionais = [
   {
     enunciado: "1) Qual das alternativas abaixo é um sistema operacional de código aberto?",

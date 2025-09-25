@@ -1,5 +1,3 @@
-// hardwareSoftware.js
-
 const questoesHardwareSoftware = [
   {
     enunciado: "1) Qual componente é considerado o “cérebro” do computador?",

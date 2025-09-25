@@ -1,5 +1,3 @@
-// navegadores.js
-
 const questoesNavegadores = [
   {
     enunciado: "1) Qual é o navegador mais utilizado no mundo?",
