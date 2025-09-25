@@ -2,10 +2,7 @@ body {
   background-color: #f8f9fa;
 }
 
-.modulo-concluido {
-  background-color: #28a745 !important;
-  color: white !important;
-}
+
 
 .btn-secondary:hover {
   background-color: #6c757d;
@@ -47,7 +44,7 @@ p{
 }
 
 h1 {
-  font-size: 3rem; 
+  font-size: 3.75rem; 
 }
 
 h2 {
@@ -56,4 +53,15 @@ h2 {
 
 li{
   font-size: 1.25rem;
+}
+
+@media (max-width: 300px) {
+  h1, h2 {
+    font-size: 1.2rem; /* diminui títulos */
+    text-align: center;
+  }
+
+  p, li, td, th {
+    font-size: 0.85rem; /* diminui fonte do texto */
+  }
 }
