@@ -55,7 +55,7 @@ li{
   font-size: 1.25rem;
 }
 
-@media (max-width: 300px) {
+@media (max-width: 200px) {
   h1, h2 {
     font-size: 1.2rem; /* diminui títulos */
     text-align: center;
@@ -64,4 +64,6 @@ li{
   p, li, td, th {
     font-size: 0.85rem; /* diminui fonte do texto */
   }
+
+  
 }
