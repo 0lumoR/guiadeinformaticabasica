@@ -14,7 +14,7 @@ body {
 }
 
 .navbar-nav .dropdown-menu {
-  margin-right: 10px; /* distancia da borda direita */
+  margin-right: 10px; 
 }
 
 
@@ -40,7 +40,6 @@ img.logos{
 
 
 
-
 p{
   font-size: 1.25rem;
   
@@ -48,7 +47,7 @@ p{
 }
 
 h1 {
-  font-size: 3.75rem; /* aumenta só os h1 */
+  font-size: 3.75rem; 
 }
 
 h2 {
