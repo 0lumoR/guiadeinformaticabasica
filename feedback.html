@@ -43,7 +43,10 @@
       <h2 class="text-center mb-4">📋 Avaliação do Site</h2>
 
       <form id="feedbackForm" action="https://formsubmit.co/romulo_doa@hotmail.com" method="POST" class="needs-validation" novalidate>
-        
+        <!-- Hidden para redirecionamento -->
+        <input type="hidden" name="_next" value="https://0lumor.github.io/guiadeinformaticabasica/agradecimento.html">
+        <input type="hidden" name="_subject" value="Avaliação do Site">
+        <input type="hidden" name="_captcha" value="false">  
         <!-- Dados pessoais -->
         <div class="mb-3">
           <label for="nome" class="form-label">Nome:</label>
@@ -138,10 +141,7 @@
           <textarea id="comentarios" name="comentarios" rows="4" class="form-control" placeholder="Deixe seu comentário aqui..."></textarea>
         </div>
 
-        <!-- Hidden para redirecionamento -->
-        <input type="hidden" name="_next" value="https://0lumor.github.io/guiadeinformaticabasica/agradecimento.html">
-        <input type="hidden" name="_subject" value="Avaliação do Site">
-        <input type="hidden" name="_captcha" value="false">
+        
 
         <div class="text-center">
           <button type="submit" class="btn btn-success px-4">Enviar Avaliação</button>
